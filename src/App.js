@@ -1,3 +1,4 @@
+import Clicker from "./components/Clicker";
 import SID from "./components/SID";
 
 
@@ -5,7 +6,8 @@ function App() {
   return (
     <div>
       <header>
-      <SID/>
+      {/* <SID/> */}
+      <Clicker/>
       </header>
     </div>
   );
