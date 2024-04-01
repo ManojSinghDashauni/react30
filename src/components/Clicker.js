@@ -11,7 +11,7 @@ const Clicker = () => {
         <div className='h-1/4 flex gap-5 justify-center items-center bg-slate-300'>
             <p className='cursor-pointer hover:animate-bounce text-4xl' onClick={()=>setNum(num+1)} >&#128316;</p>
             <p className='cursor-pointer hover:animate-bounce text-4xl' onClick={()=>setNum(0)} >&#128260;</p>
-            <p className='cursor-pointer hover:animate-bounce text-4xl' onClick={()=>setNum(num-1)} >&#128317;</p>
+            <p className='cursor-pointer hover:animate-bounce text-4xl' onClick={()=>setNum(Math.max(0,num-1))} >&#128317;</p>
         </div>
     </div>
   )
